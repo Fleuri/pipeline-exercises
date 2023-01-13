@@ -1,3 +1,6 @@
+import functions_framework
+
+
 def function_cicd(request):
 
     request_json = request.get_json()
