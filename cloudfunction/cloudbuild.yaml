@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args: ['-c', 'gcloud functions deploy function_cicd --region=us-central1 --source=/cloudfunction/. --trigger-http --runtime=python39 --allow-unauthenticated']
+  args: ['-c', 'gcloud functions deploy function_cicd --region=us-central1 --source=./cloudfunction/. --trigger-http --runtime=python39 --allow-unauthenticated']
 timeout: 1600s
